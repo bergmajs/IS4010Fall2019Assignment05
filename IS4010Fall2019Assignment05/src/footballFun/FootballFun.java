@@ -25,7 +25,28 @@ public class FootballFun {
 			System.out.println("At least one test failed");
 		}
 	}
+	/**
+	 * Take football score and return string describing score
+	 * @param score
+	 * @return string describing integer score
+	 */
 	public static String translateScore (int score) {
-		return "";
+		if (score == 2) return ("safety");
+		
+		else if (score == 3) return ("field goal");
+		
+		else if (score == 6) return ("touchdown");
+		
+		else if (score == 7) return ("touchdown and extra point");
+		
+		else if (score == 8) return ("touchdown and 2-point conversion");
+		
+		else if (score == -1) return ("");
+		
+		else if (score == 1) return ("invalid");
+		
+		else if (score == 10) return ("you must be playing Quidditch ");
+		
+		return ""; // if all previous tests pass, will return "All tests passed" from main method
 	}
 }
